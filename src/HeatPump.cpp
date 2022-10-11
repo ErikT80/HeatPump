@@ -268,6 +268,7 @@ void HeatPump::setTemperature(float setting) {
     setting = setting / 2;
     wantedSettings.temperature = setting < 10 ? 10 : (setting > 31 ? 31 : setting);
   }
+    cout << "wanted temperature: " + wantedSettings.temperature << endl;
 }
 
 void HeatPump::setRemoteTemperature(float setting) {
